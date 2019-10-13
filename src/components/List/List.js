@@ -16,11 +16,12 @@ class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
-    image: PropTypes.string,
+    image: PropTypes.node,
   }
 
   static defaultProps = {
     description: settings.defaultListDescription,
+    image: settings.defaultListImage,
   }
 
   addColumn(title){
@@ -33,8 +34,8 @@ class List extends React.Component {
             title,
             icon: 'list-alt',
             cards: [],
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -55,7 +56,7 @@ class List extends React.Component {
           <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 
