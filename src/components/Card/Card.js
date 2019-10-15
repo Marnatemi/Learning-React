@@ -6,7 +6,6 @@ const Card = props => {
 
   const {title} = props;
   
-
   return <section className={styles.component}>
     <p>{title}</p>
   </section>;
