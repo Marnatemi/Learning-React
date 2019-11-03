@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import App from './App';
+import Home from './Home';
 
 
 
@@ -9,4 +9,4 @@ const mapStateToProps = state => ({
   subtitle: state.app.subtitle,
 });
 
-export default connect(mapStateToProps)(App); 
+export default connect(mapStateToProps)(Home); 
