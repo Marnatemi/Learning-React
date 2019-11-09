@@ -4,8 +4,10 @@ import styles from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import {settings} from '../../data/dataStore.js';
+import Search from '../Search/Search';
 
-class Search extends React.Component {
+
+class Header extends React.Component {
 
 
   render (){
@@ -13,6 +15,7 @@ class Search extends React.Component {
     return (
       <header className={styles.component}>
         <Container>
+          <Search />
           <div className={styles.wrapper}>
             <Link className={styles.logo} to={'/'}>
               <Icon name={settings.defaultHeaderIcon} />
@@ -29,4 +32,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search;
+export default Header;
